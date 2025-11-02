@@ -1,65 +1,25 @@
-
 package Modelo;
 
 public class login {
     private int id;
     private String nombre;
-    private String correo;
+    private String email;
     private String pass;
-    private String rol;
+    private int rol;
 
-    public login() {
-    }
+    // Getters y setters
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
 
-    public login(int id, String nombre, String correo, String pass, String rol) {
-        this.id = id;
-        this.nombre = nombre;
-        this.correo = correo;
-        this.pass = pass;
-        this.rol = rol;
-    }
+    public String getNombre() { return nombre; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
 
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
 
-    public int getId() {
-        return id;
-    }
+    public String getPass() { return pass; }
+    public void setPass(String pass) { this.pass = pass; }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getCorreo() {
-        return correo;
-    }
-
-    public void setCorreo(String correo) {
-        this.correo = correo;
-    }
-
-    public String getPass() {
-        return pass;
-    }
-
-    public void setPass(String pass) {
-        this.pass = pass;
-    }
-
-    public String getRol() {
-        return rol;
-    }
-
-    public void setRol(String rol) {
-        this.rol = rol;
-    }
-
-
-    
+    public int getRol() { return rol; }
+    public void setRol(int rol) { this.rol = rol; }
 }
